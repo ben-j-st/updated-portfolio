@@ -1,0 +1,346 @@
+/* Css For All Pages */
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+#navbar {
+    background-color: #F1F1F1;
+    display: flex;
+    justify-content: center;
+}
+
+#title {
+    padding-top: 5px;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+}
+
+#home, #about, #work, #contact-me {
+    align-self: center;
+    font-size: 19px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+a:hover {
+    transition: all .2s ease-in-out;
+    transform: scale(1.2);
+}
+
+#footer {
+    font-size: 25px;
+    background-color: white;
+    margin-top:25px;
+    padding-top:10px;
+    padding-bottom: 5px;
+    position: fixed;
+    text-align: center;
+    bottom: 0;
+    width: 100vw;
+}
+
+/* transitions for footer icons */
+.fa-mobile:hover {
+    transition: all .2s ease-in-out;
+    transform: scale(1.5)
+}
+
+.fa-github:hover {
+    transition: all .2s ease-in-out;
+    transform: scale(1.5)
+}
+
+.fa-linkedin:hover {
+    transition: all .2s ease-in-out;
+    transform: scale(1.5)
+}
+
+.fa-envelope:hover {
+    transition: all .2s ease-in-out;
+    transform: scale(1.5)
+}
+
+
+/* Styling for just Index.html */
+#main-image{
+    background-image: url(../Images/code-computer.jpg);
+    background-color: #AABCBF;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+    height: auto;
+    border-radius: 1em;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+}
+
+
+/* used to help keep image responsive allowing the height of the container to change */
+#main-content {
+    position: relative;
+    width: 100%;
+    padding-bottom: 25%;
+    height: 0;
+}
+
+#below-main {
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+#full-stack {
+    margin-top: 10px;
+}
+
+/* Styling for About Me */
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+#about-me {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 40%;
+    padding-left: 4%;
+    padding-right: 4%
+}
+
+#resume {
+    font-size: 40px;
+}
+
+#port-div {
+    display: flex;
+    flex-basis: 40%;
+    padding-left: 5%;
+    justify-content: center;
+}
+
+#port-img {
+    border-radius: 20px;
+    height: 400px;
+    width: 250px;
+}
+
+.ppf-container {
+    background-color: #F1F1F1;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+#past-icon {
+    text-align: center;
+    align-self: center;
+    font-size: 120px;
+    flex-basis: 33.33%;
+    order: 1;
+}
+
+#past-text {
+    background-color: white;
+    flex-basis: 33.33%;
+    order: 4;
+}
+
+#present-icon {
+    text-align: center;
+    align-self: center;
+    font-size: 120px;
+    flex-basis: 33.33%;
+    order: 5;
+}
+
+#present-text {
+    background-color: white;
+    flex-basis: 33.33%;
+    order: 2;
+}
+
+#future-icon {
+    text-align: center;
+    align-self: center;
+    font-size: 120px;
+    flex-basis: 33.33%;
+    order: 3;
+}
+
+#future-text {
+    background-color: white;
+    flex-basis: 33.33%;
+    order: 6;
+}
+
+/* styling for contact */
+#contact-form {
+    text-align: center;
+}
+
+#contact-img {
+    background-image: url(../Images/desk-comp.jpg);
+    background-color: #AABCBF;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+    height: auto;
+    border-radius: 1em;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+}
+
+textarea {
+    resize: none;
+}
+
+/* used to help keep image responsive allowing the height of the container to change */
+#contact-box {
+    position: relative;
+    width: 100%;
+    padding-bottom: 25%;
+    height: 0;
+}
+
+form {
+    margin-top: 50px;
+    transition: all 4s ease-in-out;
+}
+
+.form-control {
+    width: 600px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid gray;
+    color: white;
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+input {
+    height: 45px;
+}
+
+form .submit {
+    background: #ff5722;
+    border-color: transparent;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    height: 50px;
+    margin-top: 20px;
+}
+
+form .submit:hover {
+    background-color: #f44336;
+    cursor: pointer;
+}
+/* media queries for screens 547 and smaller */
+@media only screen 
+and (max-width: 547px) {
+    #about-me {
+        flex-basis: 80%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    #port-div {
+        margin-top: 20px;
+        flex-basis: 80%;
+        padding-left: 5%;
+        padding-right: 5%;
+        margin-bottom: 20px;
+    }
+
+    #past-icon {
+        flex-basis: 80%;
+        order: 1;
+    }
+    
+    #past-text {
+        padding: 0 5%;
+        flex-basis: 100%;
+        order: 2;
+    }
+    
+    #present-icon {
+        flex-basis: 80%;
+        order: 3;
+    }
+    
+    #present-text {
+        padding: 0 5%;
+        flex-basis: 100%;
+        order: 4;
+    }
+    
+    #future-icon {
+        flex-basis: 80%;
+        order: 5;
+    }
+    
+    #future-text {
+        padding: 0 5%;
+        flex-basis: 100%;
+        order: 6;
+    }
+}
+
+/* media query for screens between 537 and 830 */
+@media only screen 
+and (min-width: 537px)
+and (max-width: 830px) {
+    #past-icon {
+        flex-basis: 50%;
+        order: 1;
+    }
+    
+    #past-text {
+        padding: 0 5%;
+        flex-basis: 40%;
+        order: 2;
+    }
+    
+    #present-icon {
+        flex-basis: 50%;
+        order: 4;
+    }
+    
+    #present-text {
+        padding: 0 5%;
+        flex-basis: 40%;
+        order: 3;
+    }
+    
+    #future-icon {
+        flex-basis: 50%;
+        order: 5;
+    }
+    
+    #future-text {
+        padding: 0 5%;
+        flex-basis: 40%;
+        order: 6;
+    }
+}
