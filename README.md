@@ -6,4 +6,4 @@ an updated portfolio website
 
 
 https://ben-j-st.github.io/updated-portfolio/
- ![Website preview](Images\portfoliov2.PNG) 
+ ![Website preview](Images/portfoliov2.PNG) 
