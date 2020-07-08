@@ -13,9 +13,10 @@
    
    
    <!-- google fonts -->
-   <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;700&display=swap" rel="stylesheet">
    <link href="style/style.css" rel="stylesheet">
    <link href="style/gallery.css" rel="stylesheet">
+   <link href="style/modal.css" rel="stylesheet">
 </head>
 
 <body>
@@ -29,39 +30,172 @@
 
     <main class="img-area">
         <div class="single-img">
-            <a href="https://ben-j-st.github.io/projectOne---bootcamp/index.html"><img src="Images/group-rs.png"></a>
+           <img id="img-project" src="Images/group-rs.png">
         </div>
 
         <div class="single-img">
-            <a href="https://ben-j-st.github.io/responsive-portfolio/"><img src="Images/old-rs.png"></a>
+            <img id="img-old" src="Images/old-rs.png">
         </div>
 
         <div class="single-img">
-            <a href="https://ben-j-st.github.io/hw5-workday-scheduler/"><img src="Images/schedule-rs.png"></a>
+            <img id="img-work" src="Images/schedule-rs.png">
         </div>
 
         <div class="single-img">
-            <a href="https://ben-j-st.github.io/password-generator/"><img src="Images/pass-rs.png"></a>
+            <img id="img-pass" src="Images/pass-rs.png">
         </div>
 
         <div class="single-img">
-            <a href="https://ben-j-st.github.io/floats-example/"><img src="Images/float-rs.jpg"></a>
+            <img id="img-float" src="Images/float-rs.jpg">
         </div>
 
         <div class="single-img">
-            <a href="https://ben-j-st.github.io/hw6-weather-dashboard/"><img src="Images/weather-rs.jpg"></a>
+            <img id="img-weather" src="Images/weather-rs.jpg">
         </div>
     </main>
 
-     <!-- footer stuck to bottom -->
-<footer id="footer">
-    <a href="#" class="footer-a"><i class="fa fa-mobile"></i></a>
-    <a href="#" class="footer-a"><i class="fab fa-github"></i></i></a>
-    <a href="#" class="footer-a"><i class="fab fa-linkedin"></i></i></a>
-    <a href="#" class="footer-a"><i class="fa fa-envelope"></i> </a>
-  </footer>
+
+    <!-- The Modal for Mobile -->
+    <div id="modal-mobile" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+        <span class="close" id="close-mobile">&times;</span>
+        <p>Mobile: 0452 188 552</p>
+        </div>
+  
+    </div>
+
+    <!-- The Modal For Email -->
+    <div id="modal-email" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+        <span class="close" id="close-email">&times;</span>
+        <p>Email: ben-j-stephens@hotmail.com</p>
+        </div>
+  
+    </div>
+
+    <!-- The Modal for Project Image -->
+    <div id="modal-project" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+        <span class="close" id="close-project">&times;</span>
+        <img src="Images/group-rs.png">
+            <div class="inner-float">
+                <h1 class="modal-heading">Group Project</h1>
+                <a href="https://github.com/ben-j-st/updated-portfolio" class="img-heading">Github Repo</a>
+                <a href="https://ben-j-st.github.io/projectOne---bootcamp/index.html" class="img-heading">Website URL</a>
+                <p class="image-text">Veniam nulla aliquip cupidatat pariatur enim aliqua sit nulla culpa anim.</p>
+            </div>
+        </div>
+  
+    </div>
 
     
+    <!-- The Modal for Responsive Image -->
+    <div id="modal-old" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+        <span class="close" id="close-old">&times;</span>
+        <img src="Images/group-rs.png">
+            <div class="inner-float">
+                <h1 class="modal-heading">Old Responsive Website</h1>
+                <a href="https://github.com/ben-j-st/responsive-portfolio" class="img-heading">Github Repo</a>
+                <a href="https://ben-j-st.github.io/responsive-portfolio/" class="img-heading">Website URL</a>
+                <p class="image-text">Veniam nulla aliquip cupidatat pariatur enim aliqua sit nulla culpa anim.</p>
+            </div>
+
+        </div>
+  
+    </div>
+
+
+    
+    <!-- The Modal for Workday Image -->
+    <div id="modal-work" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+        <span class="close" id="close-work">&times;</span>
+        <img src="Images/schedule-rs.png">
+            <div class="inner-float">
+                <h1 class="modal-heading">Workday Scheduler</h1>
+                <a href="https://github.com/ben-j-st/hw5-workday-scheduler" class="img-heading">Github Repo</a>
+                <a href="https://ben-j-st.github.io/hw5-workday-scheduler/" class="img-heading">Website URL</a>
+                <p class="image-text">Veniam nulla aliquip cupidatat pariatur enim aliqua sit nulla culpa anim.</p>
+            </div>
+        </div>
+  
+    </div>
+
+
+    
+    <!-- The Modal for Password Image -->
+    <div id="modal-pass" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+        <span class="close" id="close-pass">&times;</span>
+        <img src="Images/pass-rs.png">
+            <div class="inner-float">
+                <h1 class="modal-heading">Password Generator</h1>
+                <a href="https://github.com/ben-j-st/password-generator" class="img-heading">Github Repo</a>
+                <a href="https://ben-j-st.github.io/password-generator/" class="img-heading">Website URL</a>
+                <p class="image-text">Veniam nulla aliquip cupidatat pariatur enim aliqua sit nulla culpa anim.</p>
+            </div>
+        </div>
+  
+    </div>
+
+
+    
+    <!-- The Modal for Float Image -->
+    <div id="modal-float" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+        <span class="close" id="close-float">&times;</span>
+        <img src="Images/float-rs.jpg">
+            <div class="inner-float">
+                <h1 class="modal-heading">Example of Floats</h1>
+                <a href="https://github.com/ben-j-st/floats-example" class="img-heading">Github Repo</a>
+                <a href="https://ben-j-st.github.io/floats-example/" class="img-heading">Website URL</a>
+                <p class="image-text">Veniam nulla aliquip cupidatat pariatur enim aliqua sit nulla culpa anim.</p>
+            </div>
+        </div>
+  
+    </div>
+
+    <!-- The Modal for Weather Image -->
+    <div id="modal-weather" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+        <span class="close" id="close-weather">&times;</span>
+        <img src="Images/weather-rs.jpg">
+            <div class="inner-float">
+                <h1 class="modal-heading">Weather App</h1>
+                <a href="https://github.com/ben-j-st/hw6-weather-dashboard" class="img-heading">Github Repo</a>
+                <a href="https://ben-j-st.github.io/hw6-weather-dashboard/" class="img-heading">Website URL</a>
+                <p class="image-text">Veniam nulla aliquip cupidatat pariatur enim aliqua sit nulla culpa anim.</p>
+            </div>
+        </div>
+  
+    </div>
+
+     <!-- footer stuck to bottom -->
+     <footer id="footer">
+        <i class="fa fa-mobile" id="mobile-icon"></i>
+        <a href="https://github.com/ben-j-st?tab=repositories" class="footer-a"><i class="fab fa-github"></i></i></a>
+        <a href="https://www.linkedin.com/in/ben-stephens-3a19181a8/" class="footer-a"><i class="fab fa-linkedin"></i></i></a>
+        <i class="fa fa-envelope" id="email-icon"></i>
+      </footer>
+
+  <script src="scripts/portfolio.js"></script>
 </body>
 
 </html>
