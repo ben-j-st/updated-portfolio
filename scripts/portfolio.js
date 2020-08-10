@@ -8,6 +8,7 @@ const modalWork = document.getElementById("modal-work");
 const modalPass = document.getElementById("modal-pass");
 const modalFloat = document.getElementById("modal-float");
 const modalWeather = document.getElementById("modal-weather");
+const modalBurger = document.getElementById("modal-burger")
 
 // // Get the button that opens the modal
 const mobileBtn = document.getElementById("mobile-icon");
@@ -19,6 +20,7 @@ const workImg = document.getElementById("img-work");
 const passImg = document.getElementById("img-pass");
 const floatImg = document.getElementById("img-float");
 const weatherImg = document.getElementById("img-weather");
+const burgerImg = document.getElementById("img-burger");
 
 // // Get the <span> element that closes the modal
 let span = document.getElementById("close-mobile");
@@ -30,6 +32,7 @@ const closeWork = document.getElementById("close-work");
 const closePass = document.getElementById("close-pass");
 const closeFloat = document.getElementById("close-float");
 const closeWeather = document.getElementById("close-weather");
+const closeBurger = document.getElementById("close-burger");
 
 
 // When the user clicks on the button, open the modal
@@ -66,6 +69,10 @@ weatherImg.onclick = function() {
     modalWeather.style.display = "block";
 }
 
+burgerImg.onclick = function() {
+    modalBurger.style.display = "block";
+}
+
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
   modal.style.display = "none";
@@ -100,6 +107,10 @@ closeWeather.onclick = function() {
     modalWeather.style.display = "none";
 }
 
+closeBurger.onclick = function() {
+    modalBurger.style.display = "none";
+}
+
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
@@ -119,6 +130,10 @@ window.onclick = function(event) {
         modalFloat.style.display = "none";
     }   else if (event.target == modalWeather) {
         modalWeather.style.display = "none";
+    }else if (event.target == modalWeather) {
+        modalWeather.style.display = "none";
+    } else if (event.target == modalBurger) {
+        modalBurger.style.display = "none";
     }
 }   
 
