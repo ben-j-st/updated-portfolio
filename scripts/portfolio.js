@@ -9,6 +9,7 @@ const modalPass = document.getElementById("modal-pass");
 const modalFloat = document.getElementById("modal-float");
 const modalWeather = document.getElementById("modal-weather");
 const modalBurger = document.getElementById("modal-burger")
+const modalChirp = document.getElementById("modal-chirp")
 
 // // Get the button that opens the modal
 const mobileBtn = document.getElementById("mobile-icon");
@@ -21,6 +22,7 @@ const passImg = document.getElementById("img-pass");
 const floatImg = document.getElementById("img-float");
 const weatherImg = document.getElementById("img-weather");
 const burgerImg = document.getElementById("img-burger");
+const chirpImg = document.getElementById("img-chirp");
 
 // // Get the <span> element that closes the modal
 let span = document.getElementById("close-mobile");
@@ -33,6 +35,7 @@ const closePass = document.getElementById("close-pass");
 const closeFloat = document.getElementById("close-float");
 const closeWeather = document.getElementById("close-weather");
 const closeBurger = document.getElementById("close-burger");
+const closeChirp = document.getElementById("close-chirp");
 
 
 // When the user clicks on the button, open the modal
@@ -73,6 +76,10 @@ burgerImg.onclick = function() {
     modalBurger.style.display = "block";
 }
 
+chirpImg.onclick = function() {
+    modalChirp.style.display = "block";
+}
+
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
   modal.style.display = "none";
@@ -111,6 +118,10 @@ closeBurger.onclick = function() {
     modalBurger.style.display = "none";
 }
 
+closeChirp.onclick = function() {
+    modalChirp.style.display = "none";
+}
+
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
@@ -130,10 +141,12 @@ window.onclick = function(event) {
         modalFloat.style.display = "none";
     }   else if (event.target == modalWeather) {
         modalWeather.style.display = "none";
-    }else if (event.target == modalWeather) {
+    }   else if (event.target == modalWeather) {
         modalWeather.style.display = "none";
-    } else if (event.target == modalBurger) {
+    }   else if (event.target == modalBurger) {
         modalBurger.style.display = "none";
+    }   else if (event.target == modalChirp) {
+        modalChirp.style.display = "none";
     }
 }   
 
